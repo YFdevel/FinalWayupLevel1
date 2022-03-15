@@ -1,0 +1,31 @@
+.desc-content {
+  @include flex(row, space-between, center);
+}
+.desc-content_reverse {
+  @include flex(row-reverse, space-between, center);
+}
+.desc-content__wrapper {
+  margin-left: 94px;
+}
+.desc-content__wrapper_reverse {
+  margin: 0 94px 0 0;
+}
+.desc-content__title {
+  font-size: 25px;
+  margin-bottom: 46px;
+}
+
+.desc-content__text {
+  font-size: 17px;
+  font-weight: 500;
+}
+.desc-content__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.desc-content__img {
+  flex-shrink: 0;
+}
+.desc-content__img img {
+  height: 100%;
+  width: 100%;
+}

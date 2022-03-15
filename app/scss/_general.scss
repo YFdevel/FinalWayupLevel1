@@ -1,0 +1,132 @@
+/*  Specification */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+}
+
+button {
+  background: none;
+}
+
+button,
+button:hover,
+button:focus {
+  font-family: inherit;
+  color: #000;
+  outline: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+h1,
+h2 {
+  line-height: 1.1em;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.btn-green {
+  background: #6E9C9F;
+  width: 243px;
+  padding: 22px 0 22px;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+  @include flex(row, flex-start, center);
+}
+
+#back-top {
+  background: #ff5600;
+  height: 50px;
+  width: 50px;
+  right: 31px;
+  bottom: 18px;
+  position: fixed;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 48px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+}
+
+#back-top a {
+  color: #fff;
+}
+
+
+.section-title {
+  margin-bottom: 92px;
+  font-size: 40px;
+}
+.section-btn{
+  padding: 130px 0;
+}
+.btn_brand{
+  margin: 0 auto;
+}
+.form-input{
+  outline: none;
+  border:none;
+  border-bottom: 1px solid #6E9C9F;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 16px 10px;
+  margin-bottom: 35px;
+  color: #6E9C9F;
+  width: 100%;
+}

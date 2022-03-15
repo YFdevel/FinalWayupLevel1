@@ -1,0 +1,65 @@
+.top-section {
+  padding: 120px 0 60px;
+  background: linear-gradient(to right, #fff 53%, #f1eadc 47%);
+}
+
+.top-image {
+  @include flex(row, flex-end, stretch);
+  position: relative;
+
+}
+
+.top-image img {
+  width: 80%;
+  height: 100%;
+}
+.foto-second{
+  position: absolute;
+  width: 197px;
+  height: 295px;
+  top: 110px;
+  right: -100px;
+  z-index:5;
+}
+.foto-third{
+  position: absolute;
+  width: 297px;
+  height: 395px;
+  bottom: -60px;
+  left: -60px;
+  z-index: 5;
+}
+.offer {
+  &__title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin-bottom: 45px;
+  }
+
+  &__title-span {
+    display: block;
+  }
+
+  &__text {
+    font-size: 20px;
+    max-width: 60%;
+    min-height: auto;
+    text-align: right;
+    margin-bottom: 60px;
+  }
+}
+
+.offer-btns {
+  @include flex(row, flex-end, center);
+  max-width: 60%;
+  margin-bottom: 126px;
+  &__arrow{
+    padding: 22px 26px;
+    background: rgba(110, 156, 159, 0.1);
+  }
+  &__arrow:hover{
+    padding: 22px 26px;
+    box-shadow: rgba(110, 156, 159, 0.1);
+  }
+}

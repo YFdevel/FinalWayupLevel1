@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Item</title>
+    <meta name="description" content="Новый бренд одежды. То, что вы искали в этом сезоне.">
+    <meta name="keywords"
+          content="утонченные сочетания, бархатные оттенки, новые поступления, бренд, время исследовать">
+    <meta property="og:title" content="Womazing / Товар">
+    <meta property="og:description" content="Новый бренд одежды. То, что вы искали в этом сезоне.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://sitename.ru/img/preview-png">
+    <meta property="og:site_name" content="Womazing">
+    <meta name="theme-color" content="#2500f9">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <a href="index.html" class="logo logo-header">
+                    <img src="img/logo.svg" alt="Womazing" class="logo__img">
+                    <span class="logo__text">Womazing</span>
+                </a>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1">
+                <ul class="menu">
+                    <li class="menu__item menu__item_header"><a href="index.html" class="active">Главная</a></li>
+                    <li class="menu__item menu__item_header"><a href="shop.html">Магазин</a></li>
+                    <li class="menu__item menu__item_header"><a href="brand.html">О бренде</a></li>
+                    <li class="menu__item menu__item_header"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 offset-lg-1">
+                <div class="header-right">
+                    <a href="tel:+7 (495) 823-54-12" class="header-right__tel-img">
+                        <img src="img/phone-green.png" alt="phone" class="phone-green">
+                        <img src="img/phone-white.png" alt="phone" class="phone-white">
+                    </a>
+                    <a href="tel:+7 (495) 823-54-12" class="header-right__tel-text">+7 (495) 823-54-12</a>
+                    <img src="img/cart.svg" alt="cart" class="header-right__cart">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modals">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div id="wrapper-modal">
+                    <div id="overlay"></div>
+                    <div id="modal-window" class="modal-window">
+                        <div class="modal-window-content">
+                            <img src="img/close.png" alt="close" class="popup-close">
+                            <h4 class="modal-window-content__title">Заказать обратный звонок</h4>
+                            <form action="#" class="form popup-form" id="popup-form" method="post">
+                                <input type="text" class="form-input popup-form__input" placeholder="Имя" name="name">
+                                <input type="text" class="form-input popup-form__input" placeholder="E-mail"
+                                       name="email">
+                                <input type="text" class="form-input popup-form__input" placeholder="Телефон"
+                                       name="phone">
+                                <button type="submit" class="popup-form__btn btn btn-green">Заказать звонок</button>
+                            </form>
+                            <div class="message-for-user">
+                                <div class="text-success-form">
+                                    Спасибо! Мы обязательно вам перезвоним
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="breadcrumbs-section breadcrumbs-section_one-item">
+    <div class="container">
+        <h1 class="breadcrumbs-title">
+            Свитшот Sweet Shot
+        </h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Свитшоты
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__text">
+                    Свитшот Sweet Shot
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="one-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="one-item-img">
+                    <img src="img/sweetshot-big.jpg" alt="sweetshot">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form class="one-item-desc">
+                    <div class="one-item-desc__prices">
+                        <span class="item-price">$311</span>
+                        <span class="item-discount">$450</span>
+                    </div>
+                    <fieldset class="one-item-desc__size">
+                        <legend class="item-size-label">Выберите размер</legend>
+                        <input type="radio" class="item-size-value" name="size" value="S">
+                        <input type="radio" class="item-size-value" name="size" value="M">
+                        <input type="radio" class="item-size-value" name="size" value="L">
+                        <input type="radio" class="item-size-value" name="size" value="XL">
+                        <input type="radio" class="item-size-value" name="size" value="XXL">
+                    </fieldset>
+                    <fieldset class="one-item-desc__color">
+                        <legend class="item-color-label">Выберите цвет</legend>
+                        <input type="radio" class="item-color-value" name="color" value="#927876">
+                        <input type="radio" class="item-color-value" name="color" value="#D4D4D4">
+                        <input type="radio" class="item-color-value" name="color" value="#FD9696">
+                        <input type="radio" class="item-color-value" name="color" value="#FDC796">
+                    </fieldset>
+                    <div class="one-item-desc__btns">
+                        <button class="item-count-btn btn">1</button>
+                        <button class="item-submit-btn btn btn-green">Открыть магазин</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bind-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="bind-item-title">
+                    Связанные товары
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="bind-item-goods">
+                    <div class="card card_one-item">
+                        <div class="card__wrapper">
+                            <img src="img/usa.jpg" alt="usa" class="card__image">
+                            <div class="card__overlay">
+                                <img src="img/arrow-overlay.svg" alt="search">
+                            </div>
+                        </div>
+                        <h4 class="card__title">Футболка USA</h4>
+                        <span class="card__text">$129</span>
+                    </div>
+                    <div class="card card_one-item">
+                        <div class="card__wrapper">
+                            <img src="img/glow.jpg" alt="glow" class="card__image">
+                            <div class="card__overlay">
+                                <img src="img/arrow-overlay.svg" alt="search">
+                            </div>
+                        </div>
+                        <h4 class="card__title">Купальник Glow</h4>
+                        <span class="card__text">$129</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<div class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="logo logo-footer">
+                    <img src="img/logo.svg" alt="Womazing" class="logo__img">
+                    <span class="logo__text">Womazing</span>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <ul class="menu">
+                    <li class="menu__item menu__item_footer"><a href="index.html" class="active">Главная</a></li>
+                    <li class="menu__item menu__item_footer"><a href="shop.html">Магазин</a></li>
+                    <li class="menu__item menu__item_footer"><a href="brand.html">О бренде</a></li>
+                    <li class="menu__item menu__item_footer"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 offset-lg-2">
+                <div class="footer-contacts">
+                    <a href="tel:+7 (495) 823-54-12" class="footer-contacts__tel">+7 (495) 823-54-12</a>
+                    <a href="mailto:hello@womazing.com" class="footer-contacts__email">hello@womazing.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-lg-3">
+            <div class="col-lg-3">
+                <div class="politics">
+                    <span>© Все права защищены</span>
+                    <span>Политика конфиденциальности</span>
+                    <span>Публичная оферта</span>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <div class="footer-goods">
+                    <a href="#">Пальто</a>
+                    <a href="#">Свитшоты</a>
+                    <a href="#">Кардиганы</a>
+                    <a href="#">Толстовки</a>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-4">
+                <ul class="socials-list">
+                    <li class="socials-list__item">
+                        <!--noindex-->
+                        <a href="https://instagram.com/" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/instagram.svg" alt="instagram">
+                        </a>
+                        <!--/noindex-->
+                    </li>
+                    <li class="socials-list__item">
+                        <!--noindex-->
+                        <a href="https://www.facebook.com/" rel="nofollow noopener noreferrer" target="_blank">
+                            <img src="img/facebook.svg" alt="facebook">
+                        </a>
+                        <!--/noindex-->
+                    </li>
+                    <li class="socials-list__item">
+                        <!--noindex-->
+                        <a href="https://www.twitter.com" rel="nofollow noopener noreferrer"
+                           target="_blank">
+                            <img src="img/twitter.svg" alt="twitter">
+                        </a>
+                        <!--/noindex-->
+                    </li>
+                </ul>
+                <div class="visa-img"><img src="img/visa-mastercard.png" alt="visa"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/modernizr-3.5.0.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

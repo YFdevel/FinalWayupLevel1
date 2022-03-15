@@ -1,3 +1,19 @@
-body {
-  background: gainsboro;
-}
+@import "variables";
+@import "mixins";
+@import "general";
+@import "blocks/header";
+@import "blocks/top-section";
+@import "slider";
+@import "blocks/card";
+@import "blocks/collection";
+@import "blocks/important";
+@import "blocks/dream";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/breadcrumbs";
+@import "blocks/desc-section";
+@import "blocks/contacts";
+@import "blocks/tabs";
+@import "blocks/shop";
+@import "blocks/page-desc";
+

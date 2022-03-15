@@ -1,0 +1,35 @@
+.shop {
+  padding-bottom: 130px;
+}
+
+.amount-of-goods {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #808080;
+  margin-bottom: 65px;
+}
+.shop-content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 65px;
+  margin-bottom: 65px;
+}
+.tabs_pages{
+  @include flex(row, center, center);
+}
+
+.tab-item_pages {
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+}
+.tab-item-arrow{
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+}
+.tab-item-arrow:hover{
+  opacity: 1.0;
+}

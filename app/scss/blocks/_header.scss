@@ -1,0 +1,71 @@
+.header {
+  @include flex(row, flex-start, center);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 54px 0 45px;
+  background: transparent;
+}
+.logo {
+  @include flex(row, flex-start, center);
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-left: 11px;
+  }
+}
+.logo-header:hover{
+  text-decoration: none;
+}
+.menu__item:not(:last-child) {
+  font-size: 15px;
+  margin-right: 45px;
+}
+.menu__item a.active{
+  font-weight: 700;
+  color: #6e9c9f;
+}
+.header-right {
+  @include flex(row, flex-end, center);
+
+  &__tel-img {
+    margin-right: 15px;
+    padding: 5px;
+    @include flex(row, center, center);
+    background: none;
+    .phone-white {
+      display: none;
+    }
+    .phone-green {
+      display: block;
+    }
+
+    &:hover {
+      background: #6e9c9f;
+      .phone-white {
+        display: block;
+      }
+      .phone-green {
+        display: none;
+      }
+    }
+  }
+
+  &__tel-img img {
+    width: 14.5px;
+    height: 14.5px;
+  }
+  &__tel-text {
+    margin-right: 67px;
+  }
+}
+.sticky-bar {
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  background: #fff;
+  opacity: 0.9;
+}

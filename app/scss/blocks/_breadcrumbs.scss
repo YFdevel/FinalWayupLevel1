@@ -1,0 +1,35 @@
+.breadcrumbs-section {
+  margin-top: 190px;
+  padding-bottom: 200px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    color: #909090;
+  }
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs li:not(:last-child) {
+  margin-right: 13px;
+}
+
+.breadcrumbs li:not(:last-child):after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #000;
+  margin-left: 13px;
+}

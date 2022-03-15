@@ -1,0 +1,22 @@
+.dream-content {
+  &__title {
+    font-size: 25px;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+
+  &__link {
+    color: #6E9C9F;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__link:hover {
+    color: #6E9C9F;
+  }
+}

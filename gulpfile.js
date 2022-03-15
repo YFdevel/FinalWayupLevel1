@@ -10,11 +10,12 @@ const dist = "dist/";
 const config = {
     app: {
         html: app + "html/**/*.html",
-        style: app + "scss/style.scss",
+        scss: app + "scss/style.scss",
+        css: app + "css/**/*.css",
         bootstrap: app + "bootstrap/**/*.*",
         js: app + "js/**/*.js",
         img: app + "img/**/*.*",
-        fonts: app + "fonts/*.*",
+        fonts: app + "fonts/**/*.*",
     },
     dist: {
         html: dist,
@@ -26,11 +27,12 @@ const config = {
     },
     watch: {
         html: app + "html/**/*.html",
-        style: app + "scss/**/*.scss",
+        scss: app + "scss/**/*.scss",
+        css: app + "css/**/*.css",
         bootstrap: app + "bootstrap/**/*.*",
         js: app + "js/**/*.js",
         img: app + "img/**/*.*",
-        fonts: app + "fonts/*.*",
+        fonts: app + "fonts/**/*.*",
     }
 }
 
@@ -60,12 +62,19 @@ const bootstrapTask = () => {
         }));
 }
 const scssTask = () => {
-    return gulp.src(config.app.style)
+    return gulp.src(config.app.scss)
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: "expanded"
         }).on("error", sass.logError))
         .pipe(sourcemaps.write())
+        .pipe(gulp.dest(config.dist.style))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+}
+const cssTask = () => {
+    return gulp.src(config.app.css)
         .pipe(gulp.dest(config.dist.style))
         .pipe(browserSync.reload({
             stream: true
@@ -95,10 +104,11 @@ const fontsTask = () => {
 const watchFiles = () => {
     gulp.watch([config.watch.html], gulp.series(htmlTask));
     gulp.watch([config.watch.bootstrap], gulp.series(bootstrapTask));
-    gulp.watch([config.watch.style], gulp.series(scssTask));
+    gulp.watch([config.watch.scss], gulp.series(scssTask));
+    gulp.watch([config.watch.css], gulp.series(cssTask));
     gulp.watch([config.watch.js], gulp.series(jsTask));
     gulp.watch([config.watch.img], gulp.series(imgTask));
     gulp.watch([config.watch.fonts], gulp.series(fontsTask));
 }
-const start = gulp.series(htmlTask, bootstrapTask, scssTask, jsTask, imgTask, fontsTask);
+const start = gulp.series(htmlTask, bootstrapTask, scssTask, cssTask, jsTask, imgTask, fontsTask);
 exports.default = gulp.parallel(start, watchFiles, webServer);

@@ -1,0 +1,46 @@
+.footer {
+  padding: 100px 0;
+  background: #F1EADC;
+}
+
+.footer-contacts {
+  @include flex(column, flex-start, flex-end);
+
+  &__tel {
+    margin-bottom: 9px;
+    font-size: 15px;
+  }
+
+  &__tel {
+    font-size: 15px;
+  }
+}
+
+.politics, .footer-goods {
+  @include flex(column, flex-start, flex-start);
+}
+
+.politics span, .footer-goods a {
+  font-size: 13px;
+}
+
+.politics span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+
+.footer-goods a:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.socials-list {
+  @include flex(row, flex-end, center);
+}
+
+.socials-list__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.visa-img {
+  @include flex(row, flex-end, center);
+  margin-top: 27px;
+}

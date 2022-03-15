@@ -1,0 +1,59 @@
+.map {
+  height: 476px;
+  background: #DDDDDD;
+  @include flex(row, center, center);
+}
+
+.section-contact {
+  padding: 130px 0;
+}
+
+.contact-item__text:not(:last-child) {
+  margin-bottom: 19px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.contact-item__text_link {
+  font-size: 20px;
+}
+
+.section-contact-form {
+  padding-bottom: 130px;
+}
+
+.contact-form-wrapper {
+  @include flex(column, flex-start, flex-start);
+}
+
+.contact-form {
+  @include flex(column, flex-start, flex-start);
+  width: 45%;
+
+  &__input {
+    width: 80%;
+  }
+
+  &__textarea {
+    min-height: 134px;
+    width: 100%;
+    resize: none;
+  }
+
+  &__btn {
+    margin-bottom: 62px;
+  }
+}
+
+.contact-form-title {
+  font-size: 25px;
+  margin-bottom: 65px;
+}
+
+.message-for-user-contact-page {
+  height: 84px;
+  width: 45%;
+  background: #F1EADC;
+  @include flex(row, center, center);
+  //display: none;
+}

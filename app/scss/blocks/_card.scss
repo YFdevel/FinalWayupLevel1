@@ -1,0 +1,48 @@
+.card {
+  height: 478px;
+  border: none;
+  overflow: hidden;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 24px auto 10px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #998E78;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    position: relative;
+    transition: all 1.0s linear;
+  }
+
+  &__wrapper img {
+    width: 100%;
+  }
+
+  &__overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(110, 156, 159, 0.64);
+  }
+
+  &__overlay img {
+    width: 31px;
+    height: 21px;
+  }
+
+  &__wrapper:hover &__overlay {
+    display: flex;
+  }
+}
