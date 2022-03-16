@@ -1,0 +1,18 @@
+.success{
+  padding-bottom: 130px;
+}
+.success-content{
+  @include flex(row, space-between, center);
+}
+.success-info-wrapper{
+  @include flex(row, flex-start, center);
+}
+.success-img{
+  margin-right: 44px;
+}
+.success-btn{
+  background: none;
+  border: 1px solid #6E9C9F;
+  color: #6e9c9f;
+  font-size: 17px;
+}

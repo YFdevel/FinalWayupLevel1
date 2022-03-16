@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Item</title>
+    <title>Cart</title>
     <meta name="description" content="Новый бренд одежды. То, что вы искали в этом сезоне.">
     <meta name="keywords"
           content="утонченные сочетания, бархатные оттенки, новые поступления, бренд, время исследовать">
-    <meta property="og:title" content="Womazing / Товар">
+    <meta property="og:title" content="Womazing /Корзина">
     <meta property="og:description" content="Новый бренд одежды. То, что вы искали в этом сезоне.">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://sitename.ru/img/preview-png">
@@ -91,7 +91,7 @@
 <section class="breadcrumbs-section breadcrumbs-section_one-item">
     <div class="container">
         <h1 class="breadcrumbs-title">
-            Свитшот Sweet Shot
+            Корзина
         </h1>
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
@@ -100,99 +100,70 @@
                 </a>
             </li>
             <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link">
-                    Свитшоты
-                </a>
-            </li>
-            <li class="breadcrumbs__item">
                 <span class="breadcrumbs__text">
-                    Свитшот Sweet Shot
+                   Корзина
                 </span>
             </li>
         </ul>
     </div>
 </section>
 
-
-<section class="one-item">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="one-item-img">
-                    <img src="img/sweetshot-big.jpg" alt="sweetshot">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <form class="one-item-desc">
-                    <div class="one-item-desc__prices">
-                        <span class="item-price">$311</span>
-                        <span class="item-discount">$450</span>
-                    </div>
-                    <fieldset class="one-item-desc__size">
-                        <legend class="item-size-label">Выберите размер</legend>
-                        <input type="radio" class="item-size-value" name="size" value="S">
-                        <input type="radio" class="item-size-value" name="size" value="M">
-                        <input type="radio" class="item-size-value" name="size" value="L">
-                        <input type="radio" class="item-size-value" name="size" value="XL">
-                        <input type="radio" class="item-size-value" name="size" value="XXL">
-                    </fieldset>
-                    <fieldset class="one-item-desc__color">
-                        <legend class="item-color-label">Выберите цвет</legend>
-                        <input type="radio" class="item-color-value" name="color" value="#927876">
-                        <input type="radio" class="item-color-value" name="color" value="#D4D4D4">
-                        <input type="radio" class="item-color-value" name="color" value="#FD9696">
-                        <input type="radio" class="item-color-value" name="color" value="#FDC796">
-                    </fieldset>
-                    <div class="one-item-desc__btns">
-                        <button class="item-count-btn btn">1</button>
-                        <button class="item-submit-btn btn btn-green">Открыть магазин</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="bind-item">
+<section class="cart">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="bind-item-title">
-                    Связанные товары
-                </h2>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="bind-item-goods">
-                    <div class="card card_one-item">
-                        <div class="card__wrapper">
-                            <img src="img/usa.jpg" alt="usa" class="card__image">
-                            <div class="card__overlay">
-                                <img src="img/arrow-overlay.svg" alt="search">
-                            </div>
-                        </div>
-                        <h4 class="card__title">Футболка USA</h4>
-                        <span class="card__text">$129</span>
+                <div class="cart-content">
+                    <div class="cart-heading">
+                        <span class="cart-heading-item">Товар</span>
+                        <span class="cart-heading-price">Цена</span>
+                        <span class="cart-heading-amount">Количество</span>
+                        <span class="cart-heading-total">Всего</span>
                     </div>
-                    <div class="card card_one-item">
-                        <div class="card__wrapper">
-                            <img src="img/glow.jpg" alt="glow" class="card__image">
-                            <div class="card__overlay">
-                                <img src="img/arrow-overlay.svg" alt="search">
-                            </div>
+                    <div class="cart-bottom">
+                        <div class="cart-bottom-item">
+                            <button class="cart-bottom-item__delete">x</button>
+                            <img src="img/cart-img-usa.jpg" alt="foto" class="cart-bottom-item__img">
+                            <span class="cart-bottom-item_desc">Футболка USA</span>
                         </div>
-                        <h4 class="card__title">Купальник Glow</h4>
-                        <span class="card__text">$129</span>
+                        <span class="cart-bottom-price">$129</span>
+                        <div class="cart-bottom-amount">
+                            <input type="number" value="1">
+                        </div>
+                        <span class="cart-bottom-total">$129</span>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="cart-coupon">
+                    <form class="cart-coupon-apply">
+                        <input type="text" class="cart-coupon-apply__input form-input" placeholder="Введите купон">
+                        <button class="cart-coupon-apply__btn btn btn-green">Применить купон</button>
+                    </form>
+                    <button class="cart-coupon-apply__btn btn btn-green">Обновить корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+
+                <div class="cart-result">
+                    <div class="cart-result-label">
+                        <span class="cart-result-label__text">Подытог:</span>
+                        <span class="cart-result-label__sum">$129</span>
+                    </div>
+                    <div class="cart-result-main">
+                        <div class="cart-result-info">
+                            <span class="cart-result-info__text">Итого:</span>
+                            <span class="cart-result-info__sum">$129</span>
+                        </div>
+                        <button class="cart-result-btn btn btn-green">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
 </section>
 
 

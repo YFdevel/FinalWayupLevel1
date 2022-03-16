@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Item</title>
+    <title>Checkout</title>
     <meta name="description" content="Новый бренд одежды. То, что вы искали в этом сезоне.">
     <meta name="keywords"
           content="утонченные сочетания, бархатные оттенки, новые поступления, бренд, время исследовать">
-    <meta property="og:title" content="Womazing / Товар">
+    <meta property="og:title" content="Womazing /Оформление заказа">
     <meta property="og:description" content="Новый бренд одежды. То, что вы искали в этом сезоне.">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://sitename.ru/img/preview-png">
@@ -88,10 +88,10 @@
     </div>
 </div>
 
-<section class="breadcrumbs-section breadcrumbs-section_one-item">
+<section class="breadcrumbs-section">
     <div class="container">
         <h1 class="breadcrumbs-title">
-            Свитшот Sweet Shot
+            Оформление заказа
         </h1>
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
@@ -100,97 +100,83 @@
                 </a>
             </li>
             <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link">
-                    Свитшоты
-                </a>
-            </li>
-            <li class="breadcrumbs__item">
                 <span class="breadcrumbs__text">
-                    Свитшот Sweet Shot
+                  Оформление заказа
                 </span>
             </li>
         </ul>
     </div>
 </section>
 
-
-<section class="one-item">
+<section class="checkout">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="one-item-img">
-                    <img src="img/sweetshot-big.jpg" alt="sweetshot">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <form class="one-item-desc">
-                    <div class="one-item-desc__prices">
-                        <span class="item-price">$311</span>
-                        <span class="item-discount">$450</span>
+            <div class="col-12">
+                <form action="#" class="form checkout-form" id="checkout-form" method="post">
+                    <div class="checkout-left">
+                        <fieldset class="checkout-form-field">
+                            <legend class="checkout-form-title">Данные покупателя</legend>
+                            <input type="text" class="form-input checkout-form-input" placeholder="Имя"
+                                   name="name">
+                            <input type="text" class="form-input checkout-form-input" placeholder="E-mail"
+                                   name="email">
+                            <input type="text" class="form-input checkout-form-input" placeholder="Телефон"
+                                   name="phone">
+                        </fieldset>
+
+                        <fieldset class="checkout-form-field">
+                            <legend class="checkout-form-title">Адрес получателя</legend>
+                            <input type="text" class="form-input checkout-form-input" placeholder="Страна"
+                                   name="country">
+                            <input type="text" class="form-input checkout-form-input" placeholder="Город"
+                                   name="city">
+                            <input type="text" class="form-input checkout-form-input" placeholder="Улица"
+                                   name="street">
+                            <input type="text" class="form-input checkout-form-input" placeholder="Дом"
+                                   name="house">
+                            <input type="text" class="form-input checkout-form-input" placeholder="Квартира"
+                                   name="apartment">
+                        </fieldset>
+                        <fieldset class="checkout-form-field">
+                            <legend class="checkout-form-title">Комментарии</legend>
+                            <textarea class="form-input checkout-form-textarea" placeholder="Введите текст"
+                                      name="message"></textarea>
+                        </fieldset>
+
                     </div>
-                    <fieldset class="one-item-desc__size">
-                        <legend class="item-size-label">Выберите размер</legend>
-                        <input type="radio" class="item-size-value" name="size" value="S">
-                        <input type="radio" class="item-size-value" name="size" value="M">
-                        <input type="radio" class="item-size-value" name="size" value="L">
-                        <input type="radio" class="item-size-value" name="size" value="XL">
-                        <input type="radio" class="item-size-value" name="size" value="XXL">
-                    </fieldset>
-                    <fieldset class="one-item-desc__color">
-                        <legend class="item-color-label">Выберите цвет</legend>
-                        <input type="radio" class="item-color-value" name="color" value="#927876">
-                        <input type="radio" class="item-color-value" name="color" value="#D4D4D4">
-                        <input type="radio" class="item-color-value" name="color" value="#FD9696">
-                        <input type="radio" class="item-color-value" name="color" value="#FDC796">
-                    </fieldset>
-                    <div class="one-item-desc__btns">
-                        <button class="item-count-btn btn">1</button>
-                        <button class="item-submit-btn btn btn-green">Открыть магазин</button>
+                    <div class="checkout-right">
+                        <fieldset class="checkout-form-field">
+                            <legend class="checkout-form-title">Ваш заказ</legend>
+                            <div class="checkout-form-label">
+                                <span class="checkout-form-label__text">Товар</span>
+                                <span class="checkout-form-label__sum">Всего</span>
+                            </div>
+                            <div class="checkout-form-label">
+                                <span class="checkout-form-label__text">Футболка USA</span>
+                                <span class="checkout-form-label__sum">$129</span>
+                            </div>
+                            <div class="checkout-form-label">
+                                <span class="checkout-form-label__text">Подытог:</span>
+                                <span class="checkout-form-label__sum">$129</span>
+                            </div>
+                            <div class="checkout-form-label checkout-form-label_bcg">
+                                <span class="checkout-form-label__text">Итого:</span>
+                                <span class="checkout-form-label__sum">$129</span>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="checkout-form-field">
+                            <legend class="checkout-form-title">Способы оплаты</legend>
+                            <label class="checkbox-label"><input type="checkbox" class="checkout-checkbox">Оплата наличными</label>
+                            <button type="submit" class="checkout-form__btn btn btn-green">Разместить заказ
+                            </button>
+                        </fieldset>
+
                     </div>
 
                 </form>
+
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="bind-item">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="bind-item-title">
-                    Связанные товары
-                </h2>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="bind-item-goods">
-                    <div class="card card_one-item">
-                        <div class="card__wrapper">
-                            <img src="img/usa.jpg" alt="usa" class="card__image">
-                            <div class="card__overlay">
-                                <img src="img/arrow-overlay.svg" alt="search">
-                            </div>
-                        </div>
-                        <h4 class="card__title">Футболка USA</h4>
-                        <span class="card__text">$129</span>
-                    </div>
-                    <div class="card card_one-item">
-                        <div class="card__wrapper">
-                            <img src="img/glow.jpg" alt="glow" class="card__image">
-                            <div class="card__overlay">
-                                <img src="img/arrow-overlay.svg" alt="search">
-                            </div>
-                        </div>
-                        <h4 class="card__title">Купальник Glow</h4>
-                        <span class="card__text">$129</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>

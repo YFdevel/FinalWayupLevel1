@@ -79,6 +79,7 @@ img {
   background: #6E9C9F;
   width: 243px;
   padding: 22px 0 22px;
+  color:#fff;
 }
 
 .btn:hover {
@@ -129,4 +130,34 @@ img {
   margin-bottom: 35px;
   color: #6E9C9F;
   width: 100%;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #b0b0b0;
+}
+textarea{
+  resize: none;
 }

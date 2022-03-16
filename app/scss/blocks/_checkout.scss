@@ -1,0 +1,46 @@
+.checkout{
+  padding-bottom: 130px;
+}
+.checkout-form{
+  @include flex(row, flex-start, stretch);
+}
+.checkout-left{
+  width: 35%;
+  margin-right: 300px;
+}
+.checkout-right{
+  width: 25%;
+}
+.checkout-form-field:nth-child(1),.checkout-form-field:nth-child(2){
+  margin-bottom: 81px;
+}
+.checkout-form-textarea{
+  min-height: 134px;
+}
+.checkout-form-title{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 47px;
+}
+.checkout-form-label{
+  @include flex(row, space-between, center);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.checkout-form-label_bcg{
+  background: #F1EADC;
+  padding: 22px 20px 22px 10px;
+  width: 110%;
+}
+.checkout-checkbox{
+  width: 22px;
+  height: 22px;
+  margin-right: 14px;
+}
+.checkbox-label{
+  @include flex(row, flex-start, center);
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 47px;
+}
