@@ -1,40 +1,50 @@
-.breadcrumbs-section_one-item{
+.breadcrumbs-section_one-item {
   padding-bottom: 102px;
 }
-legend{
+
+legend {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 43px;
 }
-.item-discount{
+
+.item-discount {
   margin-left: 29px;
   text-decoration: line-through;
 }
-.one-item-desc{
+
+.one-item-desc {
   padding: 117px 0;
-  &__prices{
-    color:#9C9C9C;
+
+  &__prices {
+    color: #9C9C9C;
     font-size: 30px;
     margin-bottom: 59px;
   }
-  &__size{
+
+  &__size {
     margin-bottom: 67px;
   }
-  &__color{
+
+  &__color {
     margin-bottom: 59px;
   }
-  &__btns{
+
+  &__btns {
     @include flex(row, flex-start, center);
   }
 }
 
-.item-size-value{
-position: relative;
+.item-size-value {
+  position: relative;
+  margin-bottom: 30px;
 }
-.item-size-value:not(:last-child){
+
+.item-size-value:not(:last-child) {
   margin-right: 40px;
 }
-.item-size-value:after{
+
+.item-size-value:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,48 +57,57 @@ position: relative;
   border: 1px solid #000;
   background: #fff;
 }
-.item-size-value.active:after{
-  color:#fff;
+
+.item-size-value.active:after {
+  color: #fff;
   background: #000;
 }
 
-.item-color-value{
+.item-color-value {
   position: relative;
+  margin-bottom: 30px;
 }
-.item-color-value:not(:last-child){
+
+.item-color-value:not(:last-child) {
   margin-right: 40px;
 }
-.item-color-value:after{
+
+.item-color-value:after {
   position: absolute;
   top: -20px;
   left: 0;
-  content:"";
+  content: "";
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background: inherit;
 }
-.item-size-value.active:after{
- opacity: 0.7;
+
+.item-size-value.active:after {
+  opacity: 0.7;
 }
-.item-count-btn{
+
+.item-count-btn {
   height: 68px;
   width: 68px;
   margin-right: 5px;
   border: 1px solid #6E9C9F;
 }
-.bind-item{
+
+.bind-item {
   padding: 130px 0;
 }
-.bind-item-title{
+
+.bind-item-title {
   font-size: 40px;
   margin-bottom: 92px;
 }
-.bind-item-goods{
+
+.bind-item-goods {
   @include flex(row, flex-start, center);
-  overflow-x: auto;
 }
-.card_one-item{
+
+.card_one-item {
   width: 367px;
   margin-right: 30px;
 }

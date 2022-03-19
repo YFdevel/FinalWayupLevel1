@@ -41,6 +41,8 @@
 }
 
 .visa-img {
-  @include flex(row, flex-end, center);
   margin-top: 27px;
+}
+.footer-socials-wrapper {
+  @include flex(column, flex-start, flex-end);
 }

@@ -6,7 +6,6 @@
 .top-image {
   @include flex(row, flex-end, stretch);
   position: relative;
-
 }
 
 .top-image img {

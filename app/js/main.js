@@ -141,6 +141,9 @@
             $(this).addClass('active');
             return false;
         })
+        $('.hamburger').on('click', function () {
+            $('.menu-modal').toggleClass("active");
+        })
 
         $('.item-size-value').on('click', function () {
             const currTab = $(this).index();

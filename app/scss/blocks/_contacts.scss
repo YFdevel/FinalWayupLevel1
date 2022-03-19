@@ -53,6 +53,8 @@
   height: 84px;
   width: 45%;
   background: #F1EADC;
+  padding: 10px;
+  text-align: center;
   @include flex(row, center, center);
   //display: none;
 }
