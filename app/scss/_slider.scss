@@ -24,7 +24,6 @@
 
 .slider-big__item {
   @include flex(row, center, stretch);
-  height: 700px;
 }
 
 .slick-track {
