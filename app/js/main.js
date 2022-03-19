@@ -51,7 +51,7 @@
         $('.slider').slick({
             arrows: false,
             dots: true,
-            adaptiveHeight: true,
+            adaptiveHeight: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             speed: 1000,

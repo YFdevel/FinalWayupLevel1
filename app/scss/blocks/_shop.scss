@@ -10,11 +10,10 @@
   margin-bottom: 65px;
 }
 .shop-content{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 65px;
   margin-bottom: 65px;
+}
+.card_shop{
+  margin-bottom: 40px;
 }
 .tabs_pages{
   @include flex(row, center, center);

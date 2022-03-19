@@ -4,7 +4,12 @@
   border: none;
   outline: none;
 }
-
+.slider-big,.slider{
+  width: 80%;
+}
+.slider-team{
+  @include flex(row, center, center);
+}
 .slider__item,
 .slider-big__item, .slider-team__item {
   min-width: 0;
@@ -12,12 +17,9 @@
   outline: none;
 }
 
-.slider-team {
-  width: 100%;
-}
-
 .slider-big__item {
-  @include flex(row, flex-end, center);
+  @include flex(row, center, stretch);
+  height: 700px;
 }
 
 .slick-track {
@@ -45,7 +47,7 @@
 }
 
 .slider-team .slick-arrow.slick-prev {
-  left: -60px;
+  left: -50px;
   background: url("../img/prev.svg") no-repeat 0 0 / 100%;
   opacity: 0.6;
 }

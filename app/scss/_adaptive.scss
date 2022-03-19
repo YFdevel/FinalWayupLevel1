@@ -3,11 +3,6 @@
     height: 0;
   }
 }
-@media (max-width: 1300px) {
-  .top-section {
-    overflow-x: hidden;
-  }
-}
 @media (max-width: 1400px) {
   .menu__item:not(:last-child) {
     margin-right: 25px;
@@ -110,9 +105,6 @@
     text-align: center;
     width: 100%;
   }
-  .shop-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .desc-content {
     @include flex(column, space-between, center);
   }
@@ -201,9 +193,6 @@
   .tab-item_goods:not(:last-child) {
     margin-right: 15px;
     margin-bottom: 10px;
-  }
-  .shop-content {
-    grid-template-columns: 1fr;
   }
   .message-for-user-contact-page {
     width: 60%;
