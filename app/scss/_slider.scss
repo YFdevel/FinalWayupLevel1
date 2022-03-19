@@ -4,8 +4,11 @@
   border: none;
   outline: none;
 }
-.slider-big,.slider{
+.slider-big{
   width: 80%;
+}
+.slider{
+  width: 100%;
 }
 .slider-team{
   @include flex(row, center, center);
@@ -13,6 +16,8 @@
 .slider__item,
 .slider-big__item, .slider-team__item {
   min-width: 0;
+  width: 100%;
+  overflow-x: hidden;
   border: none;
   outline: none;
 }

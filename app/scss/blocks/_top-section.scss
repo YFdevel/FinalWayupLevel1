@@ -30,15 +30,13 @@
   z-index: 5;
 }
 .offer {
+
   &__title {
     font-size: 55px;
     font-weight: 500;
     line-height: 1.1em;
     margin-bottom: 45px;
-  }
-
-  &__title-span {
-    display: block;
+    max-width: 95%;
   }
 
   &__text {

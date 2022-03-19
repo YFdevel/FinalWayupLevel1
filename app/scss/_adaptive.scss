@@ -257,8 +257,11 @@
   .tab-item_goods:not(:last-child) {
     margin-right: 0;
   }
+  .btn_brand{
+    width: 80%;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .message-for-user-contact-page {
     width: 100%;
   }
@@ -267,5 +270,13 @@
   }
   .section-title{
     font-size: 24px;
+  }
+}
+@media (max-width: 320px) {
+  .offer-title{
+    font-size: 22px;
+  }
+  .section-title{
+    font-size: 22px;
   }
 }
