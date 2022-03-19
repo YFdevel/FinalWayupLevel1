@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -73,13 +74,14 @@ img {
   justify-content: center;
   text-align: center;
   transition: all 0.5s ease;
+  border: none;
 }
 
 .btn-green {
   background: #6E9C9F;
   width: 243px;
   padding: 22px 0 22px;
-  color:#fff;
+  color: #fff;
 }
 
 .btn:hover {
@@ -114,15 +116,18 @@ img {
   margin-bottom: 92px;
   font-size: 40px;
 }
-.section-btn{
+
+.section-btn {
   padding: 130px 0;
 }
-.btn_brand{
+
+.btn_brand {
   margin: 0 auto;
 }
-.form-input{
+
+.form-input {
   outline: none;
-  border:none;
+  border: none;
   border-bottom: 1px solid #6E9C9F;
   font-family: inherit;
   font-size: 17px;
@@ -131,6 +136,7 @@ img {
   color: #6E9C9F;
   width: 100%;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -158,6 +164,11 @@ input[type="number"]:focus {
   border-radius: 0;
   background: #b0b0b0;
 }
-textarea{
+
+textarea {
   resize: none;
+}
+
+section {
+  padding: 100px 0;
 }

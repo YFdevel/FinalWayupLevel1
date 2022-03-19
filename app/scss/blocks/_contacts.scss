@@ -1,7 +1,7 @@
 .map {
   height: 476px;
-  background: #DDDDDD;
   @include flex(row, center, center);
+  background: #DDDDDD;
 }
 
 .section-contact {
@@ -20,10 +20,6 @@
 
 .section-contact-form {
   padding-bottom: 130px;
-}
-
-.contact-form-wrapper {
-  @include flex(column, flex-start, flex-start);
 }
 
 .contact-form {
@@ -51,10 +47,14 @@
 
 .message-for-user-contact-page {
   height: 84px;
-  width: 45%;
+  width: 100%;
   background: #F1EADC;
   padding: 10px;
   text-align: center;
   @include flex(row, center, center);
   //display: none;
+}
+.text-map {
+  display: block;
+  text-align: center;
 }

@@ -8,20 +8,20 @@
 
     switch (address.slice(address.lastIndexOf("/"))) {
         case "/index.html":
-            $('.menu__item a:eq(0)').addClass('active');
-            $('.menu__item_footer a:eq(0)').addClass('active');
+            $('.menu__item_header a:eq(0)').addClass('active');
+            $('.footer-goods-link:eq(0)').addClass('active');
             break;
         case "/shop.html":
-            $('.menu__item a:eq(1)').addClass('active');
-            $('.menu__item_footer a:eq(1)').addClass('active');
+            $('.menu__item_header a:eq(1)').addClass('active');
+            $('.footer-goods-link:first-child:eq(1)').addClass('active');
             break;
         case "/brand.html":
-            $('.menu__item a:eq(2)').addClass('active');
-            $('.menu__item_footer a:eq(2)').addClass('active');
+            $('.menu__item_header a:eq(2)').addClass('active');
+            $('.footer-goods-link:first-child:eq(2)').addClass('active');
             break;
         case "/contact.html":
-            $('.menu__item a:eq(3)').addClass('active');
-            $('.menu__item_footer a:eq(3)').addClass('active');
+            $('.menu__item_header a:eq(3)').addClass('active');
+            $('.footer-goods-link:first-child:eq(3)').addClass('active');
             break;
         default:
             break;
@@ -142,7 +142,8 @@
             return false;
         })
         $('.hamburger').on('click', function () {
-            $('.menu-modal').toggleClass("active");
+            $('.menu_header').parent().toggleClass("d-none");
+            $('.menu_header').toggleClass("active");
         })
 
         $('.item-size-value').on('click', function () {

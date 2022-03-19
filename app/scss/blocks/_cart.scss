@@ -1,85 +1,109 @@
-.cart{
+.cart {
   padding-bottom: 130px;
 }
-.cart-heading,.cart-bottom,.cart-bottom-item{
-  @include flex(row, flex-start, center);
-}
-.cart-heading{
-  padding-bottom: 23px;
-  border-bottom:1px solid #E5E5E5;
-}
-.cart-bottom{
-  padding: 49px 0 72px 0;
+
+.cart-content {
+  padding-bottom: 72px;
 }
 
-.cart-heading-item,.cart-bottom-item{
+.cart-heading, .cart-bottom, .cart-bottom-item {
+  @include flex(row, flex-start, center);
+}
+
+.cart-heading {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.cart-bottom {
+  margin: 49px 0 0;
+}
+
+.cart-heading-item, .cart-bottom-item {
   width: 400px;
   margin-right: 130px;
+  flex-shrink: 0;
 }
-.cart-heading-price,.cart-bottom-price{
+
+.cart-heading-price, .cart-bottom-price {
   width: 60px;
   margin-right: 150px;
 }
-.cart-heading-amount,.cart-bottom-amount{
+
+.cart-heading-amount, .cart-bottom-amount {
   width: 80px;
   margin-right: 250px;
 }
-.cart-bottom-amount{
+
+.cart-bottom-amount {
   @include flex(row, flex-start, center);
 }
-.cart-bottom-amount input{
+
+.cart-bottom-amount input {
   width: 60px;
   height: 60px;
   text-align: center;
   outline: none;
   border-color: #E5E5E5;;
 }
-.cart-content{
+
+.cart-content {
   overflow-x: auto;
 }
-.cart-bottom-item__img{
+
+.cart-bottom-item__img {
   margin: 0 35px;
 }
-.cart-coupon{
+
+.cart-coupon {
   @include flex(row, space-between, center);
   padding-bottom: 88px;
 }
-.cart-coupon-apply{
+
+.cart-coupon-apply {
   @include flex(row, flex-start, center);
   width: 50%;
 }
-.cart-coupon-apply__input{
+
+.cart-coupon-apply__input {
   width: 45%;
   height: 100%;
   margin: 0 15px 0 0;
   padding: 22px 10px;
 }
-.cart-coupon-apply__btn{
+
+.cart-coupon-apply__btn {
   background: none;
   border: 1px solid #6E9C9F;
   color: #6e9c9f;
   font-size: 17px;
 }
-.cart-result{
+
+.cart-result {
   @include flex(column, flex-start, flex-end);
 }
-.cart-result-label{
+
+.cart-result-label {
   @include flex(row, flex-start, center);
   width: 80%;
 }
-.cart-result-main{
+
+.cart-result-main {
   @include flex(row, flex-start, center);
   width: 80%;
 }
-.cart-result-label{
+
+.cart-result-label {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 28px;
-  &__text{
+
+  &__text {
     margin-right: 20px;
+  }
 }
-}
-.cart-result-info{
+
+.cart-result-info {
   @include flex(row, space-between, center);
   text-align: center;
   background: #F1EADC;

@@ -4,11 +4,11 @@
 .checkout-form{
   @include flex(row, flex-start, stretch);
 }
-.checkout-left{
+.checkout-inputs{
   width: 35%;
   margin-right: 300px;
 }
-.checkout-right{
+.checkout-details{
   width: 25%;
 }
 .checkout-form-field:nth-child(1),.checkout-form-field:nth-child(2){

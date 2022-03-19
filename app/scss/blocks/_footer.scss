@@ -19,7 +19,9 @@
 .politics, .footer-goods {
   @include flex(column, flex-start, flex-start);
 }
-
+.politics{
+  margin-top: 55px;
+}
 .politics span, .footer-goods a {
   font-size: 13px;
 }
@@ -44,5 +46,17 @@
   margin-top: 27px;
 }
 .footer-socials-wrapper {
+  margin-top: 40px;
   @include flex(column, flex-start, flex-end);
+}
+.menu_footer{
+  @include flex(row, flex-start, flex-start);
+}
+.footer-goods-link.active
+{
+  font-weight: 700;
+  color: #6e9c9f;
+}
+.footer-goods{
+  margin-top: 40px;
 }

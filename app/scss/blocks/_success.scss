@@ -1,11 +1,11 @@
 .success{
   padding-bottom: 130px;
 }
-.success-content{
-  @include flex(row, space-between, center);
-}
 .success-info-wrapper{
   @include flex(row, flex-start, center);
+}
+.success-btn-wrapper{
+  @include flex(row, flex-end, center);
 }
 .success-img{
   margin-right: 44px;

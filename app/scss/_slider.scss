@@ -2,11 +2,14 @@
   min-width: 0;
   position: relative;
   border: none;
+  outline: none;
 }
 
 .slider__item,
 .slider-big__item, .slider-team__item {
   min-width: 0;
+  border: none;
+  outline: none;
 }
 
 .slider-team {

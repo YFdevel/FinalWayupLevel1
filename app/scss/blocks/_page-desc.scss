@@ -14,7 +14,6 @@ legend {
 }
 
 .one-item-desc {
-  padding: 117px 0;
 
   &__prices {
     color: #9C9C9C;
@@ -92,6 +91,7 @@ legend {
   width: 68px;
   margin-right: 5px;
   border: 1px solid #6E9C9F;
+  @include flex(row, center, center);
 }
 
 .bind-item {

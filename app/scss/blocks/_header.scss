@@ -1,7 +1,6 @@
 .header {
   @include flex(row, space-between, center);
   width: 100%;
-  min-height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +30,8 @@
   margin-right: 45px;
 }
 
-.menu__item a.active {
+.menu__item_header a.active
+{
   font-weight: 700;
   color: #6e9c9f;
 }
